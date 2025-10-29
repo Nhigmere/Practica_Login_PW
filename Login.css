@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #9ec3ff 40%, #02a8f5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* espacio entre logo y cuadro */
+}
+
+.enlace-inicio {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.contenedor-login {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    /* Bordes redondeados para el contenedor */
+    border-radius: 16px;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555;
+    /* margen entre el logo y el cuadro blanco */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.logo-img {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+}
+.logo-text {
+    letter-spacing: 1px;
+}
+
+.contenedor-login h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contenedor-login p {
+    color: #777;
+    margin-bottom: 2rem;
+}
+
+.contenedor-login form {
+    text-align: left;
+}
+
+.grupo-entrada {
+    margin-bottom: 1.5rem;
+}
+
+.grupo-entrada label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.grupo-entrada input {
+    width: 100%;
+    padding: 0.8rem;
+    /* Quitar borde visible */
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.recordarme {
+    display: flex;
+    align-items: center;
+}
+
+.recordarme input {
+    margin-right: 5px;
+}
+
+.opciones a {
+    color: #6a82fb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+button {
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.btn-primario {
+    background-color: #6a82fb;
+    color: white;
+}
+
+.btn-secundario {
+    background-color: white;
+    color: #555;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Foco accesible: mantener indicación visual aunque quitemos los bordes */
+.grupo-entrada input:focus,
+.btn-secundario:focus,
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(106,130,251,0.12);
+}
+
+.enlace-registro {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.enlace-registro a {
+    color: #6a82fb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Estilo para la imagen del icono de Google */
+.btn-secundario img.google-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
